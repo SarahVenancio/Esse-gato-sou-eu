@@ -15,17 +15,17 @@
         <div class="container">
             <div class="form">
                 <form action="/" method="post">
-                    <label for="">Informe seu nome</label>
+                    <label for="" style="color: black;">Informe seu nome</label>
                     <input type="text" name="nome">
                     <button type="submit">Enviar</button>
                 </form>
             </div>
             <div class="gato">
                 {% if not url_imagem %}
-                    <img src="..." alt="...">
+                    <img src="static/inicio.jpg" alt="..." style="height: 25em;">
                 {% else %}
                     <img src="{{url_imagem}}">
-                    <p>{{nome}}</p>
+                    <p style="color: black; font-family: Caveat, serif;">{{nome}}</p>
                 {% endif %}
                 {% if erro %}
                     <p>{{erro}}</p>

@@ -1,87 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
-
 body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
     background-color: #dbc1ff;
-    text-align: center;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
-
-header {
+header{
+    height: 10vh;
+    padding: 20px 0;
     background-color: #2b0164;
-    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+header img {
+    height: 100%;
+    margin: 0 20px;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    width: 800px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-header img {
-    height: 50px;
-}
-
-.container {
-    max-width: 600px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
 }
 
 .form {
+    width: 800px;
+    height: 70px;
+    text-align: center;
     margin-bottom: 20px;
+    padding-top: 5px;
 }
-
 .form label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
 }
-
-.form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+.form input[type="text"] {
+    width: 300px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #54325C;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: 1px solid #54325C;
+    box-shadow: -2px 2px #eee;
+    height: 50px;
+    font-size: 20px;
 }
-
 .form button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #2b0164;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    color: #ffffff;
+    width: 180px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f3f3f3;
+    border: 1px solid #54325C;
+    border-radius: 25px;
+    color: #54325C;
+    padding: 0 30px;
+    height: 50px;
+    font-size: 27px;
+    font-weight: 600;
+    box-shadow: 1px 1px 10px gray;
+    transition: 0.5s ease-in;
 }
-
 .form button:hover {
-    background-color: #381963;
+    background-color: #dbc1ff;
+    color: #1e1e1e;
+
+}
+.gato {
+    width: 700px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border: 20px solid #fff;
+    box-shadow: 10px 10px 10px #a4a4a4;
+    background-color: #fff;
 }
 
 .gato img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
-
-.gato p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
+.gato p{
+    width: 100%;
+    height:50px;
+    color: #070353;
+    font-size: 2em;
+    text-align: center;
+    padding: 14px;
+    font-weight: 800;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 footer {
-    margin-top: 20px;
-    padding: 10px;
+    width: 100%;
+    padding: 20px 0;
     background-color: #2b0164;
-    color: white;
+    color: #ffffff;
+    text-align: center;
 }
